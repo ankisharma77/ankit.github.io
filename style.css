@@ -416,4 +416,257 @@ span.d3{
 .contact-info{
     text-align:center;
 }
+
+}
+
+
+/* ============================= */
+/* GLOBAL RESET */
+/* ============================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: "Inter", sans-serif;
+}
+
+img{
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:20px;
+}
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+header{
+  background: rgb(74 124 210 / 10%);
+}
+
+.header-wrapper{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+
+.logo img{
+  height:80px;
+}
+
+.navbar ul{
+  list-style:none;
+  display:flex;
+  gap:30px;
+}
+
+.navbar a{
+  text-decoration:none;
+  color:#10244b;
+  font-weight:600;
+  font-size:15px;
+}
+
+.button-A button{
+  background:#4a7cd2;
+  color:white;
+  border:none;
+  padding:12px 20px;
+  border-radius:8px;
+  font-weight:600;
+  cursor:pointer;
+}
+
+/* ============================= */
+/* HERO SECTION */
+/* ============================= */
+
+section.desktop{
+  background: rgb(74 124 210 / 10%);
+  padding:60px 0;
+}
+
+.hero{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:40px;
+  flex-wrap:wrap;
+}
+
+.right{
+  flex:1;
+}
+
+.right h2{
+  font-size:48px;
+  line-height:1.2;
+  color:#10244b;
+}
+
+.right p{
+  color:#93a0af;
+  margin:15px 0;
+  line-height:26px;
+}
+
+.left{
+  flex:1;
+  text-align:center;
+}
+
+.left img{
+  max-width:450px;
+}
+
+/* ============================= */
+/* ABOUT SECTION */
+/* ============================= */
+
+.content .container{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:50px;
+  flex-wrap:wrap;
+}
+
+.left-content{
+  flex:1;
+  min-width:280px;
+}
+
+.right-content{
+  flex:1;
+  text-align:center;
+}
+
+/* ============================= */
+/* PROJECTS */
+/* ============================= */
+
+.projects{
+  padding:80px 20px;
+  background:#f5f9ff;
+  text-align:center;
+}
+
+.project-container{
+  display:flex;
+  gap:30px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.project-card{
+  background:white;
+  width:100%;
+  max-width:320px;
+  padding:20px;
+  border-radius:15px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.project-card:hover{
+  transform:translateY(-10px);
+}
+
+/* ============================= */
+/* CONTACT */
+/* ============================= */
+
+.contact{
+  padding:80px 20px;
+  background:#f5f9ff;
+  text-align:center;
+}
+
+.contact-container{
+  display:flex;
+  gap:40px;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-top:40px;
+}
+
+.contact-info,
+.contact-form{
+  flex:1;
+  min-width:280px;
+}
+
+.contact-form form{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+  padding:12px;
+  border:1px solid #ccc;
+  border-radius:6px;
+  width:100%;
+}
+
+.contact-form textarea{
+  height:120px;
+}
+
+.contact-form button{
+  background:#2e93e0;
+  color:white;
+  border:none;
+  padding:12px;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+/* ============================= */
+/* TABLET (≤1024px) */
+/* ============================= */
+
+@media(max-width:1024px){
+
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .right h2{
+    font-size:36px;
+  }
+
+}
+
+/* ============================= */
+/* MOBILE (≤768px) */
+/* ============================= */
+
+@media(max-width:768px){
+
+  .navbar ul{
+    display:none;
+  }
+
+  .right h2{
+    font-size:28px;
+  }
+
+  .logo img{
+    height:60px;
+  }
+
 }
